@@ -6,8 +6,6 @@ public class avg {
         for(int i=0;i<9;i++){
             sum+=arr[i];
             avg=sum/9;
-
-
         }
         System.out.println("avg of array elements is :"+avg);
 
