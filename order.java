@@ -21,7 +21,7 @@ public class order {
         else{
             System.out.println("your order:"+item);
             System.out.println("quantity:"+quantity);
-            System.out.println("total prize:"+price+"$");
+            System.out.println("total price :$"+price);
 
         }
         sc.close();
