@@ -9,6 +9,8 @@ public class rockpaper {
         String arr[]={"rock","paper","scissors"};
         String comp=arr[num];
         String next="yes";
+        int playerscore=0;
+        int compscore=0;
         
         
         
@@ -18,21 +20,28 @@ public class rockpaper {
             System.out.println("computer :"+comp);
             if(choice.equals("rock")&&comp.equals("scissors")){
                 System.out.println("you win !");
+                playerscore+=1;
             }
             else if(choice.equals("scissors")&&comp.equals("paper")){
                 System.out.println("you win !");
+                playerscore+=1;
+            
             }
             else if(choice.equals("paper")&&comp.equals("rock")){
                 System.out.println("you win !");
+                playerscore+=1;
             }
             else if(choice.equals("scissors")&&comp.equals("rock")){
                 System.out.println("you lose ! ");
+                compscore+=1;
             }
             else if(choice.equals("rock")&&comp.equals("paper")){
                 System.out.println("you loose !");
+                compscore+=1;
             }
             else if(choice.equals("paper")&&comp.equals("scissors")){
                 System.out.println("you loose");
+                compscore+=1;
             }
             else if(choice.equals("rock")&&comp.equals("rock")||
             choice.equals("paper")&&comp.equals("paper")||
@@ -50,6 +59,8 @@ public class rockpaper {
         }
         while(next.equals("yes"));
         sc.close(); 
+        System.out.println("youe score :"+playerscore);
+        System.out.println("computer score :"+compscore);
 
     } 
     
